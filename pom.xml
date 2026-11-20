@@ -33,6 +33,7 @@
             <artifactId>sqlite-jdbc</artifactId>
             <version>3.54.1.0</version>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -51,6 +52,7 @@
                     <mainClass>app.Main</mainClass>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 </project>
