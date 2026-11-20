@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="374.0" prefWidth="510.0" spacing="12" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OpenAccountController">
+
+    <padding>
+        <Insets bottom="25" left="30" right="30" top="25" />
+    </padding>
+
+    <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="OPEN NEW ACCOUNT" />
+
+    <ComboBox fx:id="accountTypeComboBox" maxWidth="300" promptText="Select account type" />
+
+    <TextField fx:id="depositField" maxWidth="300" promptText="Opening deposit (BWP)" />
+
+    <Label style="-fx-font-weight: bold;" text="Employment Details (Required for Cheque Account)" />
+
+    <TextField fx:id="companyNameField" maxWidth="300" promptText="Company name" />
+
+    <TextField fx:id="companyAddressField" maxWidth="300" promptText="Company address" />
+
+    <TextField fx:id="jobTitleField" maxWidth="300" promptText="Job title" />
+
+    <Button maxWidth="300" onAction="#openAccount" text="OPEN ACCOUNT" />
+
+    <Button maxWidth="300" onAction="#backToDashboard" text="BACK TO DASHBOARD" />
+
+</VBox>

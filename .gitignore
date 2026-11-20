@@ -1,0 +1,15 @@
+# Maven
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
+# Operating system files
+.DS_Store
+Thumbs.db

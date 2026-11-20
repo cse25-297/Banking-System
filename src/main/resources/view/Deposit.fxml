@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="900.0" spacing="18.0" style="-fx-background-color: #f0f4f8;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DepositController">
+
+    <padding>
+        <Insets bottom="35" left="40" right="40" top="35" />
+    </padding>
+
+    <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #123456;" text="DEPOSIT MONEY" />
+
+    <Label text="Enter the details of your deposit" />
+    <ComboBox fx:id="accountComboBox"
+              promptText="Select account"
+              maxWidth="300"/>
+
+    <TextField fx:id="amountField"
+               promptText="Enter deposit amount (BWP)"
+               maxWidth="320"/>
+
+    <Button text="CONFIRM DEPOSIT"
+            onAction="#confirmDeposit"
+            prefWidth="320"/>
+    <Button text="BACK TO DASHBOARD"
+            onAction="#backToDashboard"
+            prefWidth="320"/>
+
+</VBox>

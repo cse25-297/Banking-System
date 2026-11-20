@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="18.0"
+      prefWidth="900.0" prefHeight="600.0"
+      style="-fx-background-color: #f0f4f8;"
+      xmlns="http://javafx.com/javafx/25"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.LoginController">
+
+  <padding>
+    <Insets bottom="40" left="40" right="40" top="40" />
+  </padding>
+
+  <Label style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-text-fill: #123456;" text="BANKING SYSTEM" />
+
+  <Label style="-fx-font-size: 14px; -fx-text-fill: #666666;" text="Welcome! Please sign in to continue." />
+
+  <TextField fx:id="usernameField" maxWidth="300.0" promptText="Enter your username" />
+
+  <PasswordField fx:id="passwordField" maxWidth="300.0" promptText="Enter your password" />
+
+  <Button fx:id="loginButton"
+          text="LOGIN"
+          onAction="#login"
+          prefWidth="300.0"/>
+
+  <Button text="CREATE AN ACCOUNT"
+          onAction="#openRegistration"
+          prefWidth="300.0"/>
+
+</VBox>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="420.0" prefWidth="549.0" spacing="12.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegistrationController">
+
+    <padding>
+        <Insets bottom="25" left="30" right="30" top="25" />
+    </padding>
+
+    <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="CREATE BANK ACCOUNT" />
+
+    <TextField fx:id="fullNameField" maxWidth="300" promptText="Enter your full name" />
+
+    <TextField fx:id="addressField" maxWidth="300" promptText="Enter your address" />
+
+    <TextField fx:id="phoneField" maxWidth="300" promptText="Enter your phone number" />
+
+    <TextField fx:id="usernameField" maxWidth="300" promptText="Choose a username" />
+
+    <PasswordField fx:id="passwordField" maxWidth="300" promptText="Choose a password" />
+
+    <TextField fx:id="emailField" maxWidth="300" promptText="Enter your email" />
+
+    <ComboBox fx:id="customerTypeComboBox" maxWidth="300" promptText="Select customer type" />
+
+    <Button maxWidth="300" onAction="#register" text="REGISTER" />
+
+    <Button maxWidth="300" onAction="#backToLogin" text="BACK TO LOGIN" />
+
+</VBox>

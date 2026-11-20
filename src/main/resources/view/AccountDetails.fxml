@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="404.0" prefWidth="535.0" spacing="15" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AccountDetailsController">
+
+    <padding>
+        <Insets bottom="25" left="25" right="25" top="25" />
+    </padding>
+
+    <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="ACCOUNT DETAILS" />
+
+    <Label fx:id="accountNumberLabel" text="Account Number:" />
+
+    <Label fx:id="accountTypeLabel" text="Account Type:" />
+
+    <Label fx:id="balanceLabel" text="Balance:" />
+
+    <Label fx:id="branchLabel" text="Branch:" />
+
+    <Label fx:id="dateOpenedLabel" text="Date Opened:" />
+
+    <Button onAction="#viewTransactionHistory" text="VIEW TRANSACTION HISTORY" />
+
+    <Button onAction="#backToAccounts" text="BACK TO ACCOUNTS" />
+
+</VBox>
